@@ -4,7 +4,7 @@ var _           = require('lodash');
 var places      = new placesAPI();
 var photo       = "https://maps.googleapis.com/";
 photo          += "maps/api/place/photo?";
-var key         = "GOOGLE_API_KEY"; //your google api key
+var key         = "GOOGLE_API_KEY"; //AIzaSyDb9SiKdLyLlv4Jfw4_mOEE7oZD5V0fuJI
 var temp;
 
 var promptLocation = function(el) {
@@ -291,9 +291,9 @@ var recieveModeHandlers = Alexa.CreateStateHandler('_RECIEVE', {
 
 var promptHelp = function(el) {
   var m = "Here are a few examples of things you can say: ";
-  m += "where is the closest Target, how can I get ";
-  m += "to the closest Walgreens, what is the phone number";
-  m += "for the closest Pizza Hut, what is my location. ";
+  m += "where is my closest Resource centre, how can I get ";
+  m += "to my closest Dementia Advisor, what is the phone number";
+  m += "for the closest Day Centre, what is my location. ";
   m += "What would you like to do?";
   el.emit(":ask", m, m);
 };
