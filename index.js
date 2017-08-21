@@ -247,9 +247,9 @@ var handlers = {
     promptHelp(el);
   },
   "LaunchRequest": function() {
-    var m = "The places skill allows ";
+    var m = "The Alzheimer Scotland skill allows ";
     m += "you to ask for directions, location information, ";
-    m += "and hours of operation. For a list of available commands, ";
+    m += "and hours of operation of Alzheimer Scotland locations and services. For a list of available commands, ";
     m += "Please say help. You can also say cancel or stop ";
     m += "at any time to exit. What would you like to do?";
     var r = "What would you like to do?";
