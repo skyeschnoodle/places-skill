@@ -9,9 +9,9 @@ var temp;
 
 var promptLocation = function(el) {
   var m = "Your location is not currently set, to continue ";
-  m += "please say your address or zip code for ";
+  m += "please say your address or postcode for ";
   m += "accurate results.";
-  var zip = "Please say your zip code";
+  var zip = "Please say your postcode";
   el.handler.state = '_RECIEVE';
   el.emit(":ask", m, zip);
 };
@@ -218,7 +218,7 @@ var handlers = {
        var m = "Sorry I didn't catch your ";
        m += "location. Please try saying: ";
        m += "Set location to, followed by your ";
-       m += "zip code or address. ";
+       m += "postcode or address. ";
        el.emit(":ask", m, m);
      }
   },
@@ -313,7 +313,7 @@ var verifyModeHandlers = Alexa.CreateStateHandler("_VERIFY", {
        } else if(response == 'No' || response == 'no') {
          var message = "Sorry about that, ";
          message += "please try saying your address ";
-         message += "or zip code again.";
+         message += "or postcode again.";
          this.handler.state = "_RECIEVE";
          this.emit(":ask", message, message);
        } else {
